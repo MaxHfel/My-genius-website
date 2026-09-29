@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact | My Genius: Startups</title>
+  <title>Resources | My Genius: Startups</title>
   <style>
     body {
       margin: 0;
@@ -16,7 +16,6 @@
     /* Navigation bar */
     nav {
       background-color: #1a1a1a;
-
       padding: 14px 20px;
       text-align: center;
     }
@@ -64,43 +63,41 @@
       color: #2a2a2a;
     }
 
-    /* Image + contact info side by side */
-    .contact-box {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 30px;
-      align-items: center;
-    }
-    .contact-box img {
-      width: 260px;
-      height: 260px;
+    /* Banner image at the top of the page */
+    .page-image {
+      display: block;
+      width: 100%;
+      max-height: 300px;
       object-fit: cover;
       border-radius: 10px;
+     
       background-color: #fafafa;
-    }
-    .contact-info {
-      flex: 1;
-      min-width: 250px;
-    }
-    .contact-info p {
-      margin: 10px 0;
-    }
-    .contact-info a {
-      color: #555555;
-      font-weight: bold;
+      min-height: 200px;
     }
 
-    .email-button {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 10px 20px;
-      background-color: #2a2a2a;
-      color: white !important;
-      text-decoration: none;
-      border-radius: 6px;
+    /* Resource list */
+    .resource-list {
+      list-style: none;
+      padding: 0;
     }
-    .email-button:hover {
-      background-color: #555555;
+    .resource-list li {
+      border-left: 4px solid #888888;
+      padding: 10px 16px;
+      margin-bottom: 16px;
+      background-color: #f9fbfd;
+      border-radius: 4px;
+    }
+    .resource-list a {
+      font-size: 1.15em;
+      font-weight: bold;
+      color: #1a1a1a;
+    }
+    .resource-list a:hover {
+      color: #555555;
+    }
+    .resource-list p {
+      margin: 4px 0 0;
+      color: #555;
     }
 
     footer {
@@ -115,39 +112,41 @@
 
   <nav>
     <a href="index.html">Home</a>
-    <a href="resource.html">Resources</a>
+    <a href="resource.html" class="active">Resources</a>
     <a href="gallery.html">Gallery</a>
-    <a href="contact.html" class="active">Contact</a>
+    <a href="contact.html">Contact</a>
   </nav>
 
   <header>
-    <h1>Contact</h1>
-    <p>Want to talk startups? Reach out!</p>
+    <h1>Resources</h1>
+    <p>Tools and sites that help me learn about startups</p>
   </header>
 
   <main>
 
     <section>
-      <h2>Get in Touch</h2>
-      <div class="contact-box">
-        <!-- Replace with my own image -->
-        <img src="images/contact image.jpeg" alt="Contact image">
+    
+      <img class="page-image" src="images/TYE-LOGO.png" alt="Resources image">
+    </section>
 
-        <div class="contact-info">
+    <section>
+      <h2>Helpful Links</h2>
+      
+
+      <!-- target="_blank" makes each link open in a new tab -->
+      <ul class="resource-list">
+        <li>
+          <a href="https://www.startupschool.org/" target="_blank">Y Combinator Startup School</a>
           
+        </li>
 
-          <!-- mailto link: opens the visitor's email app -->
-          <p><strong>Email:</strong>
-            <a href="mailto:mholzapfel@eastsideprep.org">mholzapfel@eastsideprep.org</a>
-          </p>
+        <li>
+          <a href="https://paulgraham.com/articles.html" target="_blank">Paul Graham's Essays</a>
+          
+        </li>
 
-          <p><strong>School:</strong> Eastside Preparatory School</p>
-          <p><strong>Address:</strong> 10613 NE 38th Pl Kirkland, WA 98033</p>
-          <p><strong>Phone:</strong> 425-504-9406</p>
-
-          <a class="email-button" href="mailto:mholzapfel@eastsideprep.org">Send me an email</a>
-        </div>
-      </div>
+      
+      </ul>
     </section>
 
   </main>

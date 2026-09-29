@@ -25,7 +25,10 @@
       margin: 0 14px;
       font-weight: bold;
     }
-    
+    nav a:hover,
+    nav a.active {
+      text-decoration: underline;
+    }
 
     header {
       background-color: #2a2a2a;
@@ -76,7 +79,6 @@
       width: 200px;
       height: 200px;
       object-fit: contain;
-      border: 2px dashed #b0bec5;   /* remove thos once ive adde the real logos */
       border-radius: 10px;
       background-color: #fafafa;
     }
@@ -84,6 +86,16 @@
       margin: 8px 0 0;
       font-style: italic;
       color: #555;
+    }
+
+    .startup-info {
+      margin-top: 30px;
+      border-top: 1px solid #e0e0e0;
+      padding-top: 10px;
+    }
+    .startup-info h3 {
+      color: #1a1a1a;
+      margin-bottom: 4px;
     }
 
     footer {
@@ -98,7 +110,7 @@
 
   <!-- Navigation links to the other pages -->
   <nav>
-    <a href="index.html">Home</a>
+    <a href="index.html" class="active">Home</a>
     <a href="resource.html">Resources</a>
     <a href="gallery.html">Gallery</a>
     <a href="contact.html">Contact</a>
@@ -140,7 +152,7 @@
       <p>
         Later, I teamed up with friends to build HydraSmart, our
         first real startup. We competed in TYE PNW and earned 3rd place,
-        which showed me that our ideas could hold up against mamny teams of strong competition as well as impress a panel of judges which included people such as ojne of Bill Gate's advisors.
+        which showed me that our ideas could hold up against many teams of strong competition, as well as impress a panel of judges that included people such as one of Bill Gates's advisors.
       </p>
       <p>
         Now, I am working on building another startup alongside a professor from
@@ -157,16 +169,27 @@
       <div class="logos">
         <!-- Replace the src with the actual logo file names once i can find them -->
         <div class="logo-box">
-          <img src="images/hydrasmart-logo.png" alt="HydraSmart logo">
+          <img src="images/HydraSmartlogo.png" alt="HydraSmart logo">
           <p>HydraSmart</p>
         </div>
 
         <div class="logo-box">
-          <img src="images/new-startup-logo.png" alt="New startup logo">
-          <p>My New Startup</p>
+          <img src="images/Inseason logo.jpeg" alt="InSeason logo">
+          <p>InSeason</p>
         </div>
+      </div>
 
-        </div>
+
+      <div class="startup-info">
+        <h3>HydraSmart</h3>
+        <p>
+          Created innovative software & hardware to track/predict hydration. Created innovative systems, including an algorithm and a revolutionary bottle sleeve for consumption tracking, live recommendations, & highly accurate predictions.
+        </p>
+
+        <h3>My New Startup: InSeason</h3>
+        <p>
+          Developing an app and database to optimize regional food systems around seasonality, cutting carbon emissions from transport and overproduction. The platform builds local ecosystems connecting consumers and producers to promote healthy eating and strengthen sustainable agriculture while cultivating culinary cultures which are being lost.
+        </p>
       </div>
     </section>
 
